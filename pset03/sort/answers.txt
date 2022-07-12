@@ -1,0 +1,11 @@
+sort1 uses: bubble sort
+
+How do you know?: best on sorted, slowest on random/reversed
+
+sort2 uses: merge sort
+
+How do you know?: fastest
+
+sort3 uses: selection sort
+
+How do you know?: a bit faster on random/reversed than sort1 (seems less swaps), but same on sorted
