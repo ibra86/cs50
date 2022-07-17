@@ -10,18 +10,10 @@
 
     <link rel="stylesheet" type="text/css" href="styles.css">
 
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const timeDisplay = document.getElementById("time");
-            const dateString = new Date().toLocaleString();
-            timeDisplay.textContent = dateString.replace(", ", " - ");
-        })
-    </script>
-
 </head>
 
 <body>
+
 <nav class="navbar navbar-expand-md">
     <a class="navbar-brand" href="index.html">Home</a>
     <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
@@ -41,25 +33,15 @@
         </ul>
     </div>
 </nav>
-<header class="page-header header container-fluid">
-    <div class="overlay"></div>
-    <div class="description">
-        <h1>Hello world!</h1>
-        <p>Welcome to the home page, you are here at:</p>
-        <span id="time"></span>
+
+<div class="background">
+    <div class="container team">
+        <h1>About Us</h1>
+        <p>Hi, couple of words about me.</p>
+        <p>For that check the favorites please.</p>
+        <a class="btn btn-outline-secondary btn-lg" href="favorites.html">Go!</a>
     </div>
-</header>
-
-<script>
-    var ready = (callback) => {
-        if (document.readyState != "loading") callback();
-        else document.addEventListener("DOMContentLoaded", callback);
-    }
-    ready(() => {
-        document.querySelector(".header").style.height = window.innerHeight + "px";
-    })
-</script>
-
+</div>
 
 </body>
 
