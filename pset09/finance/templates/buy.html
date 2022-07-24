@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+<form action="/buy" method="post">
+    <div class="row gy-2 gx-3 align-items-center">
+       <div class="col-auto">
+            <input autofocus class="form-control  mb-2" name="symbol" placeholder="Stock symbol" type="text" required>
+        </div>
+        <div class="col-auto">
+            <input autofocus class="form-control  mb-2" name="shares" placeholder="Number of shares" type="text" required>
+        </div>
+        <div class="col-auto">
+            <input class="btn btn-primary  mb-2" type="submit">
+        </div>
+    </div>
+</form>
+{% endblock %}
